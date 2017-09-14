@@ -7,6 +7,13 @@ var isEquilateral = function (sideA, sideB, sideC) {
   }
 };
 
+var isIsosceles = function (sideA, sideB, sideC) {
+  if (sideA === sideC || sideA === sideB || sideB === sideC) {
+    alert("working function2");
+    $("#isosceles").show();
+  }
+};
+
 
 //Front-end Logic
 $(document).ready(function() {
@@ -17,6 +24,7 @@ $(document).ready(function() {
     alert("working");
 
     isEquilateral(sideA, sideB, sideC);
+    isIsosceles(sideA,sideB, sideC);
 
 
     event.preventDefault();
