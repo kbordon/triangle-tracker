@@ -5,7 +5,6 @@ var isEquilateral = function (sideA, sideB, sideC) {
     alert("working function");
     $("#isosceles, #scalene, #notTriangle").hide();
     $("#equilateral").show();
-    return 0;
   } else {
     return 1;
   }
@@ -53,7 +52,7 @@ $(document).ready(function() {
     var sideA = parseInt($("#sideA").val());
     var sideB = parseInt($("#sideB").val());
     var sideC = parseInt($("#sideC").val());
-    alert("working");
+    // alert("working");
 
     var otherCheck = 0;
     otherCheck = isEquilateral(sideA, sideB, sideC);
